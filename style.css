@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: 'Nunito Sans', sans-serif;
+}
+hr {
+  min-width: 100%;
+}
+.app__resume {
+  margin: 0 auto;
+  width: 50%;
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+  padding: 45px 12px;
+  display: flex;
+  gap: 30px;
+}
+.app__resume-left {
+  width: 40%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
+}
+.app__resume-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.app__resume-img img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 4px solid rgb(255, 255, 255);
+}
+.app__resume-img h1 {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+}
+.app__resume-about {
+  width: 100%;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.app__resume-about h1 {
+  font-size: 1.5rem;
+  width: 100%;
+}
+.app__resume-about p{
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  text-align: left;
+}
+.app__resume-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+  margin-left: 15px;
+  width: 100%;
+}
+.app__resume-skills h1 {
+  font-size: 1.5rem;
+}
+.app__resume-skills_icons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.section-header {
+  text-align: center;
+}
+.bg-gradient_solid {
+  color: #fff;
+  padding: 48px 0;
+}
+.steps {
+  position: relative;
+  margin-top: 32px;
+}
+
+.steps .content p {
+  color: #000000;
+  font-size: inherit;
+}
+
+.steps .content h2 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+.steps-container {
+  position: relative;
+  background-color: inherit;
+  width: calc(50% + 32px);
+}
+
+.steps-container .content {
+  padding: 15px;
+  position: relative;
+  flex: 1;
+  min-width: 285px;
+}
+.steps-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.steps .steps-container .date {
+  font-weight: 900;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 10px;
+  width: 62px;
+  height: 62px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  flex-shrink: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 777;
+}
+
+.step-line {
+  min-width: 40px;
+  background-color: rgb(0, 0, 0);
+  height: 2px;
+  margin-top: 31px;
+  opacity: 1;
+  flex-shrink: 0;
+}
+
+.app__resume-right {
+  width: 60%;
+  flex: 1;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+.app__resume-right h1 {
+  font-size: 1.5rem;
+}
+.app__resume-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.app__resume-projects h2 {
+  font-size: 1.2rem;
+}
+.app__resume-projects h2 span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.app__resume-projects p {
+  font-weight: 600;
+}
+.app__resume-hobbies{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.app__resume-hobbies_icons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.app__resume-hobbies_icon {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app__resume-hobbies_icon p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+  min-width: 6ch;
+}
+.app__resume-hobbies_icon img {
+  max-width: 48px;
+}
+.app__resume-hobbies_icon .arrow {
+  width: 70px;
+  height: 1px;
+  background-color: #000;
+}
+.rotating-react {
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width:650px) {
+  * {
+    font-size: 62.5%;
+  }
+  .app__resume {
+    width: 95%;
+    overflow: hidden;
+  }
+}
