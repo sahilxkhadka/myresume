@@ -11,6 +11,30 @@ body {
 hr {
   min-width: 100%;
 }
+.app__heading-download {
+  width: 50%;
+  margin: 15px auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.app__heading-download a {
+  padding: 0.6rem 1.8rem;
+  background-color: #ffdd00;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.app__heading-download a:hover {
+  background-color: #000;
+  color: #ffdd00;
+}
 .app__resume {
   margin: 0 auto;
   width: 50%;
